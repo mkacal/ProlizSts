@@ -5,6 +5,8 @@
     <div class="jumbotron">
         <h1>ASP.NET</h1>
         <p>
+            <asp:Button ID="Button2" runat="server"  Text="Öğrenci Girişi" OnClick="Button2_Click" />
+            <asp:Button ID="Button3" runat="server"  Text="Personel Girişi" OnClick="Button3_Click" />
             <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Çıkış" />
         </p>
         <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>

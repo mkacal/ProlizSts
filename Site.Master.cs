@@ -13,16 +13,7 @@ namespace ProlizSts
     {
         protected void Page_Init(object sender, EventArgs e)
         {
-            if (!Request.IsAuthenticated)
-            {
-                HttpContext.Current.GetOwinContext().Authentication.Challenge(
-                    new AuthenticationProperties { RedirectUri = "/" },
-                    OpenIdConnectAuthenticationDefaults.AuthenticationType);
-            }
-            else
-            {
-                var user = Page.User as System.Security.Claims.ClaimsPrincipal;
-            }
+
         }
 
         protected void Page_Load(object sender, EventArgs e)
